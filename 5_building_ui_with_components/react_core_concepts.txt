@@ -1,0 +1,4 @@
+There are three main core concepts of React
+1. Components
+2. Props
+3. State
