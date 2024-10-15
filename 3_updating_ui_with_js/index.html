@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript">
+            const app = document.getElementById('app');
+            const heading1 = document.createElement('h1');
+            const text = 'React.js';
+            const textToTextNode = document.createTextNode(text);
+            heading1.appendChild(textToTextNode);
+            app.appendChild(heading1);
+        </script>
+    </body>
+</html>
+
+<!-- Imperative vs Declarative -->
+<!-- Imperative - Stating the process to achieve a final something -->
+<!-- Declarative - Asking for the final something without needing to know the process of making it -->
+<!-- React is a declarative library -->
