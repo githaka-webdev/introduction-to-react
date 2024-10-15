@@ -1,0 +1,14 @@
+Next.js is a flexible React framework that offers the building blocks to create fast, fullstack 
+web applications. This saves developers the time consumed when configuring tools and reinventing 
+solutions for common application requirements.
+
+Building Blocks Of A Web Application
+1. User interface
+2. Routing
+3. Data Fetching
+4. Rendering
+5. Integrations - Third Party Services
+6. Infrustructure - Deployment/Storage
+7. Performance
+8. Scalability
+9. Developer Experience

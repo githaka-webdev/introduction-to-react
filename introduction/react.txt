@@ -1,0 +1,4 @@
+React is a JavaScriot library for building interactive user interfaces.
+
+Note! - A library is a collection of helpful functions
+      - React is unopinionated
