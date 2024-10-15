@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/jsx">
+            function Title(){
+                return(
+                    <h1>Heading</h1>
+                );
+            }
+            function Content(){
+                return(
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic ullam molestiae, reprehenderit magni rerum recusandae qui quibusdam corporis, voluptates ea nihil fugiat, aut quaerat? Cum voluptate culpa unde vero eius?</p>
+                );
+            }
+            function Article(){
+                return(
+                    <div>
+                        <Title />
+                        <Content />
+                    </div>
+                );
+            }
+            const app = document.getElementById('app');
+            const root = ReactDOM.createRoot(app);
+            root.render(<Article />);
+        </script>
+    </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/jsx">
+            function Title({title}){
+                return(
+                    <h1>{title ? title : "Default Title"}</h1>
+                );
+            }
+            function Content(){
+                return(
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic ullam molestiae, reprehenderit magni rerum recusandae qui quibusdam corporis, voluptates ea nihil fugiat, aut quaerat? Cum voluptate culpa unde vero eius?</p>
+                );
+            }
+            function List() {
+                const listItems = ["Item 1","Item 2","Item 3","Item 4","Item 5"];
+                return(
+                    <ul>
+                        {listItems.map(
+                            (item) => (
+                                <li key={item}>{item}</li>
+                            )
+                        )}
+                    </ul>
+                );
+            }
+            function Article(){
+                return(
+                    <div>
+                        <Title title="Heading" />
+                        <Content />
+                        <List />
+                    </div>
+                );
+            }
+            const app = document.getElementById('app');
+            const root = ReactDOM.createRoot(app);
+            root.render(<Article />);
+        </script>
+    </body>
+</html>
