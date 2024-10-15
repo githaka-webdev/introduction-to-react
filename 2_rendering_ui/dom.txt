@@ -1,0 +1,11 @@
+            --- Request --> 
+Client      {GET/POST}          Server
+            <-- Response --- 
+            {HTML,CSS,JS}
+
+Browser --- Response ----> DOM
+            {HTML}
+
+Note! - DOM means Document Object Model
+      - The DOM is an object representation of HTML elements which follows a tree/nested structure
+      - DOM allows manipulation of elements i.e styles & content
